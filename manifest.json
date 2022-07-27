@@ -1,0 +1,32 @@
+{
+    "name": "Black n White",
+    "description": "Go from Dark Mode to Light Mode and Viceversa",
+    "version": "1.0" ,
+    "manifest_version":3,
+    "background": {
+        "service_worker": "background.js"
+      },
+
+    "action": {
+        "default_title":"Black n White",
+        "default_popup": "popup.html",
+        "default_icon":"theme.png"
+    
+      },"content_scripts": [
+        {
+          "matches": ["https://*/*"],
+          
+          "js": ["content.js"]
+        }
+      ],
+  "icons": {"32": "theme.png"},
+  
+    
+    "permissions":[
+        "activeTab",
+         "tabs",
+        "scripting"
+        
+    ]
+       
+}

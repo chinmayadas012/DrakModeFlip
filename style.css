@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    width: 300px;
+    text-align: center;
+    background-color: rgb(34, 31, 31);
+    
+}
+.yellow{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(74, 207, 141);
+    color: rgb(250, 249, 252);
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(59, 211, 135),rgb(4, 115, 158));  
+}
+
+.dark{
+    color: black;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.max{
+    display: inline-block;
+}
+
+.button{
+    display: flex;
+    background-color: rgb(69, 176, 226);
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+
+}
+.row{
+
+    width: 50%;
+    top: 50%;
+    pointer-events: none;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.1rem;
+    width: 2.15rem;
+    border-radius: 50%;
+    background-color: rgb(9, 7, 102);
+    
+    pointer-events: none;
+    
+}
+
+@keyframes mymoveright {
+    from {
+        left: 0;
+        /* transform: translateX(0); */
+        background-color: rgb(9, 7, 102);
+    }
+
+    to {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: rgb(9, 7, 102);
+    }
+}
+@keyframes mymoveleft {
+     from {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588be4;
+    }
+
+    to {
+        left: 0;
+        /* transform: translateX(0); */
+        background-color: rgb(9, 7, 102);
+    }
+} 
+
